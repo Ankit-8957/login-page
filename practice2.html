@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css practice.css">
+   
+</head>
+<body>
+  
+  <form action="backend.php"></form> 
+ <center><h2>Application form</h2></center>  
+<div id="container">
+  
+ <div>
+  <label for="Name">Email: </label>  <input type="text" class="text" placeholder="Email" ></div>
+ <div> 
+  <label for="password">Password:</label> <input type="password" name="
+  password" id="password" class="password" placeholder="Password"></div>
+  <div>
+    <label for="tap">Show Password</label><input type="checkbox"  onclick="myFunction()" class="tap">
+  </div>
+  <div>
+    <input type="submit" value="submit" class="submit">
+  </div>
+</div>
+  <script>
+    function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+</body>
+</html>
